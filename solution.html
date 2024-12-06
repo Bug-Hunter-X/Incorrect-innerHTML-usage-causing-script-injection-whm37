@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct way to add content to the div
+    const myDiv = document.getElementById("myDiv");
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This text is added safely.";
+    myDiv.appendChild(newParagraph);
+  </script>
+</body>
+</html>
